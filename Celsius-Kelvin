@@ -1,0 +1,27 @@
+int main() {
+    float C,K;
+    int choice;
+    printf("1.Celsius to Kelvin\n");
+    printf("2.Kelvin to Celsius\n");
+    printf("choose(1 or 2):");
+    scanf("%d",&choice);
+    if (choice==1) {
+        printf("Temperature:");
+        scanf("%f",&C);
+        K = C+273.15;
+        printf("%.2f K\n",K);
+    }
+    else if (choice==2) {
+        printf("Temperature:");
+        scanf("%f",&K);
+        C = K-273.15;
+        if (C<0 && C>-0.005) {
+            C=0;
+        }
+        printf("%.2f deg C\n",C);
+    }
+    else {
+        printf("Choice invalid");
+    }
+    return 0;
+}
