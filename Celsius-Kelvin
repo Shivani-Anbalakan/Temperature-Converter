@@ -21,7 +21,7 @@ int main() {
         printf("%.2f deg C\n",C);
     }
     else {
-        printf("Choice invalid");
+        printf("Choice invalid. Choose a valid one");
     }
     return 0;
 }
