@@ -1,0 +1,24 @@
+int main() {
+    float C,F;
+    int choice;
+    printf("1.Celsius to Fahrenheit\n");
+    printf("2.Fahrenheit to Celsius\n");
+    printf("choose(1 or 2):");
+    scanf("%d",&choice);
+    if (choice==1) {
+        printf("Temperature:");
+        scanf("%f",&C);
+        F = (C*1.8)+32;
+        printf("%.2f deg F\n",F,248);
+    }
+    else if (choice==2) {
+        printf("temperature:");
+        scanf("%f",&F);
+        C = (F-32)/1.8;
+        printf("%.2f deg C\n",C,248);
+    }
+    else {
+        printf("Choice invalid");
+    }
+    return 0;
+}
