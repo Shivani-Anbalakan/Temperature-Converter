@@ -9,13 +9,13 @@ int main() {
         printf("Temperature:");
         scanf("%f",&C);
         F = (C*1.8)+32;
-        printf("%.2f deg F\n",F,248);
+        printf("%.2f deg F\n",F);
     }
     else if (choice==2) {
-        printf("temperature:");
+        printf("Temperature:");
         scanf("%f",&F);
         C = (F-32)/1.8;
-        printf("%.2f deg C\n",C,248);
+        printf("%.2f deg C\n",C);
     }
     else {
         printf("Choice invalid");
